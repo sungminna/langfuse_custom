@@ -12,6 +12,7 @@ receivers:
         - job_name: 'django'
           static_configs:
             - targets: ['13.125.14.13:8000']  # Adjust to your Django app's host:port
+          metrics_path: /metrics
 
 processors:
   batch:
